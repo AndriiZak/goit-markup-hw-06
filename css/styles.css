@@ -755,7 +755,7 @@ footer {
 }
 
 .oll-product-subtitle {
-    margin: 20px 24px 4px 24px;
+    margin-bottom: 4px;
 
     font-size: 18px;
     line-height: 2;
@@ -763,7 +763,7 @@ footer {
 }
 
 .oll-product-text {
-    margin: 0 24px 25px 24px;
+   
     transition: var(--transition-header);
     transition-timing-function:var(--transition-cobic-bezier);
 
@@ -836,6 +836,7 @@ footer {
 }
 
 .border {
+    padding:20px 24px;
     border: 1px solid #EEEEEE;
 }
 
@@ -864,7 +865,7 @@ footer {
     letter-spacing: 0.03em;
     color: var(--color-section);
     background-color: rgba(33, 150, 243, 0.9);
-    border: 1px solid #000000;
+
 }
 
 .oll-product-link:hover .oll-product-description-text {
