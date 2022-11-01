@@ -5,6 +5,7 @@
     --color-icon:#AFB1B8;
     --color-text-grey:#757575;
      --input-border:rgba(33, 33, 33, 0.2);
+    --color-text:#212121;
 
     --transition-header: fiill 250ms, color 250ms,  background-color 250ms, box-shedow 250ms, border 250ms;
     --transition-cobic-bezier:cubic-bezier (0.4, 0, 0.2, 1);
@@ -637,7 +638,7 @@ footer {
 }
 .masengers {
     display: block;
-    padding: 0 93px 0 63px;
+    margin: 0 93px 0 63px;
 }
 .masengers-list {
     display: flex;
@@ -925,13 +926,20 @@ footer {
     right: 8px;
     top: 8px;
 
+
     width: 30px;
     height: 30px;
 
+    transition:var(--transition-translate);
+    transition-timing-function:var(--transition-cobic-bezier);
     background-color: var(--color-section);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     background-size: contain;
+}
+
+.modal-button:hover, .modal-button:focus {
+   fill: var(--color-brand);
 }
 
 .form-label{
@@ -945,24 +953,26 @@ footer {
 }
 
 .modal-title {
-margin-bottom: 20px;
+margin-bottom: 12px;
 
-color: #212121;
+color:var(--color-text) ;
+font-weight: 700;
 font-size: 20px;
-line-height: 1.15px;
+line-height: 1.15;
 text-align: center;
 letter-spacing: 0.03em;
 }
 
 .form-control{
-  position: relative;
+    position: relative;
+    margin-bottom: 10px;
 }
 
 .form-input{
-  margin-bottom: 10px;
+
   
   width: 100%;
-  padding: 14px 15px 14px 42px;
+  padding: 10px 11px 10px 41px;
   border: 1px solid var(--input-border);
   border-radius: 4px;
   color: var(--color-text-grey);
@@ -981,7 +991,8 @@ letter-spacing: 0.03em;
   position: absolute;
   left: 15px;
   top: 50%;
-  transform: translateY(-70%);
+  transform: translateY(-50%);
+  pointer-events: none;
 
   
   
@@ -1096,7 +1107,9 @@ letter-spacing: 0.03em;
 
 .link-hero-button {
     margin-top: 30px;
-    padding: 10px 32px;
+    width: 200px;
+    height: 50px;
+    padding: 10px 10px;
     display: block;
     margin-left: auto;
     margin-right: auto;
